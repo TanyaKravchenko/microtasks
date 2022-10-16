@@ -46,12 +46,12 @@ export const NewComponent = (props: NewComponentPropsType) => {
             </ul>
             <tr>
                 {topCars.map((el, index) => {
-                    debugger
                     return (
                         <table>
                             <tr>
-                                <th key={index}> {index+1}</th>
-                                <th key={index}>{el.manufacturer}</th> --
+                                <th key={index}> {index + 1}</th>
+                                <th key={index}>{el.manufacturer}</th>
+                                --
                                 <th key={index}>{el.model}</th>
                             </tr>
                         </table>

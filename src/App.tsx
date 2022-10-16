@@ -34,6 +34,18 @@ function App() {
         console.log('I am SimpleButton')
     }
 
+    //let a = 1
+    let[a, setA] = useState(1)
+
+    const onClickHandler = () => {
+        setA(++a)
+        console.log(a)
+    }
+    const onClickHandler0 = () => {
+        setA(0)
+   
+    }
+
     return (
         <div className="App">
             <header className="App-header">
@@ -54,6 +66,10 @@ function App() {
             <Button name={'MyButton-YO'} callback={() => ButtonYOFoo('Vasya', 21)}/>
             <Button name={'MyButton-One'} callback={() => ButtonOneFoo('Ivan')}/>
             <Button name={'SimpleButton'} callback={SimpleButton}/>
+            ---M4---
+            <h1>{a}</h1>
+            <button onClick={onClickHandler}>number</button>
+            <button onClick={onClickHandler0}>0</button>
         </div>
     );
 }
