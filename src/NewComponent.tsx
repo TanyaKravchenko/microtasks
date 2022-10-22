@@ -38,26 +38,25 @@ export const NewComponent = (props: NewComponentPropsType) => {
                     return (
                         <li key={el.id}>
                             {el.id}
-                            <span key={el.id}>{el.name}</span>
-                            <span key={el.id}>{el.age}</span>
+                            <span>{el.name}</span>
+                            <span>{el.age}</span>
                         </li>
                     )
                 })}
             </ul>
-            <tr>
+            <table>
                 {topCars.map((el, index) => {
                     return (
-                        <table>
-                            <tr>
-                                <th key={index}> {index + 1}</th>
-                                <th key={index}>{el.manufacturer}</th>
-                                --
-                                <th key={index}>{el.model}</th>
-                            </tr>
-                        </table>
+                        <tbody key={index}>
+                        <tr>
+                            <td> {index + 1}</td>
+                            <td>{el.manufacturer}</td>
+                            <td>{el.model}</td>
+                        </tr>
+                        </tbody>
                     )
                 })}
-            </tr>
+            </table>
         </>
     );
 }

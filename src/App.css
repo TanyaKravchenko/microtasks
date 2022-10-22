@@ -1,10 +1,14 @@
 .App {
-  text-align: center;
+  margin-left: 50px;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.HW {
+  margin: 30px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
