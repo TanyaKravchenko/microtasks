@@ -6,7 +6,7 @@ import {Footer} from './site/Footer';
 import {NewComponent} from './NewComponent';
 import {Button} from './components/Button/Button';
 import {Money} from './components/Money';
-import {FullInput, MessageType} from './components/FullInput';
+import {FullInput} from './components/FullInput';
 
 export type BanknotsType = 'All' | 'RUBLS' | 'Dollars'
 
